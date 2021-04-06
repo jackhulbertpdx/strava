@@ -28,6 +28,8 @@ def get_gpx():
 	            return m.group(1)
 	        org_string = file
 	        df['id'] = re.sub("(.*)(.{4}$)", remove_second_group, org_string)
+		df['path_id'] = range(1, len(df) + 1)
+	        df = df.reset_index()
 	        # Write to CSV
 	        df.to_csv(outpath+'/activity_'+file+'.csv')
 
