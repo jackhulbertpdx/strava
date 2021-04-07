@@ -2,6 +2,8 @@ Overview
 
   These scripts acquire and convert data from the Strava API into a csv format so they can be more easily explored in tools like Tableau, R, etc.
 
+![Dashboard 1](https://user-images.githubusercontent.com/39444980/113911379-c4553200-978e-11eb-9ea7-c8086dafa699.png)
+
 
 <b>Data<b/>
 
