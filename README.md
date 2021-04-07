@@ -14,7 +14,7 @@ Overview
 
 <u>Get Strava.py<u/>
 
-  Calls, extracts, and writes all activity data from the Strava activities API to a csv file.
+  Calls, extracts, and writes all activity data from the Strava activities API to a csv file. You can follow this article (https://medium.com/swlh/using-python-to-connect-to-stravas-api-and-analyse-your-activities-dummies-guide-5f49727aac86) to get your credentials and set up your tokens.
 
   Prereqs to run this script are
    - A strava profile
