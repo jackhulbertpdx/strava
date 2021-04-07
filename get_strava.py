@@ -1,4 +1,22 @@
-# Special thanks to Benji Knights Johnson for writing an easy to follow article on Medium (https://medium.com/swlh/using-python-to-connect-to-stravas-api-and-analyse-your-activities-dummies-guide-5f49727aac86)
+
+#############################################################################################
+# Get Strava                                                                  
+# by Jack Hulbert                                                                         
+# April 2020                                                                                
+# https://github.com/jackhulbertpdx/strava                        
+# ----------------------------------------------------------------------------------------- 
+# This script allows one to dynamically load refresh tokens with their Strava credentials 
+# , loop through all pages of activity data from a Strava profile, and write all activities
+# to a csv output.
+# Special thanks to Benji Knights Johnson for writing an easy to follow article on Medium 
+# (https://medium.com/swlh/using-python-to-connect-to-stravas-api-and-analyse-your-activities-dummies-guide-5f49727aac86)
+# as most of the code here was modified off of his work.
+#############################################################################################
+
+
+
+
+
 
 import pandas as pd
 import requests
@@ -9,7 +27,6 @@ import glob
 import datetime as dt
 import io
 from io import StringIO
-import psycopg2
 
 
 # Get the tokens from json file to connect with Strava
@@ -75,9 +92,9 @@ activities = pd.DataFrame(
 
 while True:
     
-    #Get all pages of activities from Strava
+    # Get all pages of activities from Strava
 
-    r = requests.get(url + '?access_token=' + access_token + '&per_page=200' + '&page=' + str(page))
+    r = requests.get(url + '?access_token=' + access_token + '&per_page=100' + '&page=' + str(page))
     r = r.json()
     
     #if no results then exit loop
