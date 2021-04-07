@@ -1,3 +1,18 @@
+
+#############################################################################################
+# Get Strava GPX                                                                          
+# by Jack Hulbert                                                                         
+# April 2020                                                                                
+# https://github.com/jackhulbertpdx/strava                       
+# ----------------------------------------------------------------------------------------- 
+# This script reads in the GPX files acquired from a users Strava profile and converts each
+# activity to a CSV, creates a unique ID field for each activity that can be joined with other
+# strava data feeds, and creates a unique Path point for each pair of location coordinates in 
+# a given activity.
+#                                                                                               
+#############################################################################################
+
+
 import gpx_converter
 from gpx_converter import Converter
 import re
