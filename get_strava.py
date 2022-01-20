@@ -10,7 +10,6 @@
 # to a csv output.
 # Special thanks to Benji Knights Johnson for writing an easy to follow article on Medium 
 # (https://medium.com/swlh/using-python-to-connect-to-stravas-api-and-analyse-your-activities-dummies-guide-5f49727aac86)
-# as most of the code here was modified off of their work.
 #############################################################################################
 
 
